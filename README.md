@@ -58,7 +58,7 @@ Modificar la dirección IP localhost y el puerto 61616. Debes cambiar localhost 
   pip install stomp.py
 ```
 
-En dos terminales diferentes ejecutar
+En dos terminales o maquinas diferentes ejecutar
 
 ```bash
   python iot.py
