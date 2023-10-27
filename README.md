@@ -39,6 +39,18 @@ Login: admin
 
 Passwort: admin
 
+# Para modificar el ip del servidor en caso que este configurado como localhost
+
+Ubicar y abrir el archivo de configuración principal de Apache ActiveMQ se llama activemq.xml, en la carpeta conf. 
+
+Modificar la dirección IP localhost y el puerto 61616. Debes cambiar localhost a la dirección IP o el nombre de host de la máquina desde la que queres que ActiveMQ escuche las conexiones. Para escuchar en todas las interfaces de red, cambia de localhost a 0.0.0.0:
+
+
+```bash
+<transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+```
+
+
 # Instalar stomp
  Para poder usar ActiveMQ con python
 
